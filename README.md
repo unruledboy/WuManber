@@ -1,4 +1,4 @@
-# wumanber
+# WuManber
 WuManber implementation using c#.
 
 Wu/Manber is a very high performance string/text search/match algorithm.
