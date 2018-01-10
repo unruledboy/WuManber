@@ -10,6 +10,12 @@ This implementation is based on the C++ version from here: http://blog.raymond.b
 PPT explaination of the algorithm is here: https://www.slideshare.net/mailund/wu-mamber-string-algorithms-2007
 
 
-中文
+# Usage
+The usage is very straight forward, please refer to the FunctionTest() in the Program.cs file.
+
+Besides a list of words, you can pass in additional info like Id and Tag, just in case you would like to cross referene with your real world business.
+
+
+#中文
 
 Wu/Manber是非常高效的字符串/文本搜索/查询/匹配算法。
