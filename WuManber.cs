@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace WuManberNet
 {
@@ -159,8 +160,12 @@ namespace WuManberNet
 			m_bInitialized = true;
 		}
 
-		public IEnumerable<WordMatch> Search(string text)
-		{
+		public IEnumerable<WordMatch> Search(string rawText)
+		{	
+			//remove any non-alphanumeric characters
+			Regex rgx = new Regex("[^a-zA-Z0-9 -]");
+                        var text = rgx.Replace(rawText, "");
+			
 			if (m_bInitialized)
 			{
 				var ix = m - 1; // start off by matching end of largest common pattern
